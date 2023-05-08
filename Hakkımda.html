@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımda</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="hakkımda.css">
+
+    
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #845EC2;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #000000;">
         
         <a class="navbar-brand" href="#">
-            <img src="D.png" width="30" height="30" alt="">
+            <img id="logo" src="D.png" alt="">
         </a>
-        <a class="navbar-brand" href="#">Dilara Şentürk</a>
+        <a class="navbar-brand" href="#" style="color: #845EC2;">Dilara Şentürk</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,31 +25,106 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Hakkımda <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#" style="color: #D65DB1;">Hakkımda </a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link" href="#">Özgeçmişim</a>
+              <a class="nav-link" href="#" style="color: #FF6F91;">Özgeçmişim</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">İlgi Alanlarım</a>
+                <a class="nav-link" href="#" style="color: #FF9671;">İlgi Alanlarım</a>
               </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="color: #FFC75F;">
                 Şehrim
               </a>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu" style="background-color: #000000;">
                 <a class="dropdown-item" href="#">Denizli</a>
                 <a class="dropdown-item" href="#">Gezilecek Yerler</a>
                 <a class="dropdown-item" href="#">Mirasımız</a>
               </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">İletişim</a>
+                <a class="nav-link" href="#" style="color: #F9F871;">İletişim</a>
               </li>
           </ul> 
         </div>
     </nav>
+    
+    <div id="sayfa">
+      <br>
+      <h1 class="başlık">Hakkımda</h1>
+      <p class="açıklama"> Merhaba, ben Dilara Şentürk Sakarya Üniversitesi bilgisayar mühendisliği öğrencisiyim.</p>
+      <p class="açıklama"> Bu web sitesini 'Web Teknolojileri' dersi projesi için hazırladım. </p>
+      <br>
+      <h2 id="altbaşlık">İlgi Alanlarım</h2>
 
+      <div class="row my-5 mx-3"  style="text-align: center;">
+        <div class=" col-sm ">
+          <div class="card" >
+            <img src="card_seyehat.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seyahat Etmek</h5>
+              <p class="card-text">.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" >
+            <img src="crd_gitar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gitar Çalmak</h5>
+              <p class="card-text">.</p>
+              <a href="#" class="card-link">link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" >
+            <img src="crd_bskt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Basketbol Oynamak</h5>
+              <p class="card-text">.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5 mx-3"  style="text-align: center;">
+        <div class=" col-sm ">
+          <div class="card" >
+            <img src="kitap.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kitap Okumak</h5>
+              <p class="card-text">.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" >
+            <img src="tiyatro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tiyatroya Gitmek</h5>
+              <p class="card-text">.</p>
+              <a href="https://tiyatrolar.com.tr/sahnedekiler" class="card-link">Sahnedeki Tiyatro Oyunları</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" >
+            <img src="yuzme.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yüzmek</h5>
+              <p class="card-text">.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    
 
 
 
