@@ -15,16 +15,42 @@
     font-weight: bold;
 
 }
+
 .yazı
 {
     text-align: center;
     color: white;
-    font-weight: bold;
 }
 
-#resim
+.solayaz
 {
-    width: 1000px;
-    height: 600px;
+    margin-left: 50px;
+    text-align: left;
+    color: white;
 }
 
+.imgsağ
+{
+    float: right;
+    width: 300px;
+    height: 150px;
+    margin-right: 50px;
+}
+
+
+
+
+.imgsol
+{
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin-left: 50px;
+}
+.sağayaz
+{
+    margin-right: 50px;
+    margin-left: 400px;
+    text-align: left;
+    color: white;
+}

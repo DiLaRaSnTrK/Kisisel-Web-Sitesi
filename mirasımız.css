@@ -15,16 +15,24 @@
     font-weight: bold;
 
 }
+
 .yazı
 {
     text-align: center;
     color: white;
-    font-weight: bold;
+}
+
+p
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    color: white;
+    font-weight: 500;
 }
 
 #resim
 {
-    width: 1000px;
-    height: 600px;
+    width: 900px;
+    height: 540px;
 }
-
