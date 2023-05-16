@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İlgi Alanlarım</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="ilgi_alanlarım.css">
+    <link rel="stylesheet" href="stil/ilgi_alanlarım.css">
+    <script src="ilgi.js"></script>
 
     
 </head>
@@ -51,10 +52,41 @@
     </nav>
     
     <div id="sayfa">
-        
+      <br>
+      <br>
+      <h1 class="başlık">NBA Oyuncuları</h1><img class="imgsol" src="resimler/nba.png"><img class="imgsağ" src="resimler/bskt.ico">
+      <div class="container">
+        <div id="api">
+          <div id="text" class="yazı">
+            <table>
+              <tr height="200">
+                <td><input class="kutu" type="text" id="oyuncu"  placeholder="Buraya sayı giriniz"> &nbsp <button id="ara" onclick="ara()">Ara</button></td>
+              </tr>
+              <tr>
+                <td id="ad">Oyuncunun Adı : </td>
+              </tr>
+              <tr>
+                <td id="soyad">Oyuncunun Soyadı : </td>
+              </tr>
+              <tr>
+                <td id="pozisyon">Oynadığı Pozisyon : </td>
+              </tr>
+              <tr>
+                <td id="takım">Takımın Adı : </td>
+              </tr>
+              <tr>
+                <td id="kısaltma">Takımın Kısaltması : </td>
+              </tr>
+              <tr>
+                <td id="şehir">Takımın Şehri : </td>
+              </tr>
+            </table>
+          </div>
+        </div>
         <br>
         <br>
-        
+        <br>
+      </div>
     </div>
     
     
