@@ -1,0 +1,36 @@
+#sayfa
+{background-image: linear-gradient(to right bottom, #a183d3, #d382c2, #f288ab, #ff9794, #ffad84, #efbb7b, #d9c97e, #c0d58c, #9dd6a1, #80d4b8, #72cfcc, #78c7d9); }
+
+#logo
+{width: 30px; height: 30px;}
+
+.dropdown-item
+{
+    color:#FFC75F ;
+    font-weight: bold;
+}
+
+.nav-link
+{
+    font-weight: bold;
+
+}
+
+table
+{
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    height: 120px;
+    margin-left: 13%;
+}
+.imgsol
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+}
+   
+
+
