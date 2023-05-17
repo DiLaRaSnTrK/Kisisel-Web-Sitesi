@@ -6,7 +6,7 @@ $gelenŞifre=$_POST["şifre"];
 <?php
 if($gelenMail=="g211210001@sakarya.edu.tr" && $gelenŞifre=="g211210001")
 {
-    echo "<h1>Hoşgeldiniz 'g211210001' </h1>";
+    echo "<h1>Hoşgeldiniz '$gelenMail' </h1>";
 }
 else{    
 ?>

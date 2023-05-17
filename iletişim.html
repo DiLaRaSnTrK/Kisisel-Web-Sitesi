@@ -54,12 +54,102 @@
     </nav>
     
     <div id="sayfa">
+      <br>
+      <h3 id="başlık">İLETİŞİM FORMU</h3>
+      <br>
+      <div class="container">
+        <form  class="yazı" name="form" id="form">
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="ad">Ad</label>
+              <input type="text" class="form-control" id="adInput">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="soyad">Soyad</label>
+              <input type="text" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="emailInput" >
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telefon Numarası</label>
+            <input type="text" class="form-control" id="telInput" >
+          </div>
+
+          <div class="form-group">
+            <label for="şehir">Şehir</label>
+            <select class="form-control" id="şehirSelect">
+              <option>İstanbul</option>
+              <option>Ankara</option>
+              <option>Eskişehir</option>
+              <option>Denizli</option>
+              <option>Sakarya</option>
+            </select>
+          </div>
+          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Kadın</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Erkek</label>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+            <label for="resim">Dosyanızı seçiniz</label>
+            <input type="file" class="form-control-file" id="resimFile">
+          </div>
         
+          <div class="form-group">
+            <label for="mesaj">Mesaj</label>
+            <textarea class="form-control" id="mesaj" rows="3"></textarea>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Check1">
+            <label class="form-check-label" for="Check1">
+              Kişisel verilerimin kaydedilmesini onaylıyorum.
+            </label>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <button type="button" class="btn-secondary btn-block" onclick="Kontrol1();">Kontrol ( javascript )</button>
+            </div>
+            <div class="form-group col-md-6">
+              <button type="" class="btn-secondary btn-block" onclick="Kontrol2();">Kontrol ( js framework )</button>
+            </div>
+          </div>
+          <br>
+          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <button type="submit" class="btn-success btn-block">Gönder</button>
+            </div>
+            <div class="form-group col-md-6">
+              <button type="reset" class="btn-primary btn-block">Temizle</button>
+            </div>
+          </div>
+          <br>
+        </form>
         <br>
-        <br>
-        
+      </div>
     </div>
     
+
+    <script>
+      function Kontrol1()
+      {
+        
+      }
+    </script>
     
 
 
