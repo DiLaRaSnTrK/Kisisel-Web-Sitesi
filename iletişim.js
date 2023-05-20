@@ -43,13 +43,6 @@ function validForm(){
         mesaj.nextElementSibling.style.display = "none";
     }
 
-    if(cinsiyet.checked==false){
-        cinsiyet.nextElementSibling.style.display = "block";
-        return false;
-    }else{
-        cinsiyet.nextElementSibling.style.display = "none";
-    }
-
     if(check.checked==false){
         check.nextElementSibling.style.display = "block";
         return false;
@@ -57,6 +50,12 @@ function validForm(){
         check.nextElementSibling.style.display = "none";
     }
 
+    if(cinsiyet.checked==false){
+        cinsiyet.nextElementSibling.style.display = "block";
+        return false;
+    }else{
+        cinsiyet.nextElementSibling.style.display = "none";
+    }
    
 
     
