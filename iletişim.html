@@ -23,13 +23,13 @@
     <a class="navbar-brand" href="#" style="color: #845EC2 ; font-weight: bold;">Dilara Şentürk</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <small class="navbar-toggler-icon"></small>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="Hakkımda.html" style="color: #D65DB1;">Hakkımda </a>
+          <a class="nav-link" href="index.html" style="color: #D65DB1;">Hakkımda </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="özgeçmişim.html" style="color: #FF6F91;">Özgeçmişim</a>
@@ -62,36 +62,38 @@
     <br>
     <h3 id="başlık">İLETİŞİM FORMU</h3>
     <br>
-    <div class="container">
-
+    <div class="container" id="myform">
       <!-- Form kullanımı-->
-      <form class="yazı" name="form" id="form" method="post" action="iletişim.php" >
+      <form class="yazı" name="form" id="form"  method="post" action="iletişim.php">
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="ad">Ad</label>
-            <input type="text" class="form-control" id="adInput" name="ad" >
+            <input type="text" class="form-control" id="adInput" name="ad" aria-describedby="ad_bilgi">
+            <small id="ad_bilgi" class="error"> Lütfen adınızı giriniz</small>
           </div>
           <div class="form-group col-md-6">
             <label for="soyad">Soyad</label>
-            <input type="text" class="form-control" id="soyadInput" name="soyad" >
+            <input type="text" class="form-control" id="soyadInput" name="soyad" aria-describedby="soyad_bilgi">
+            <small id="soyad_bilgi" class="error"> Lütfen soyadınızı girin</small>
           </div>
         </div>
 
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input type="email" class="form-control" id="emailInput" name="mail" >
+          <input type="email" class="form-control" id="emailInput" name="mail" aria-describedby="mail_bilgi">
+          <small id="mail_bilgi" class="error"> Geçersiz e-mail</small>
         </div>
 
         <div class="form-group">
           <label for="tel">Telefon Numarası</label>
-          <input type="number" class="form-control" id="telInput" placeholder="11 karakter giriniz" name="tel" >
- 
+          <input type="number" class="form-control" id="telInput" placeholder="11 karakter giriniz" name="tel" aria-describedby="tel_bilgi">
+          <small id="tel_bilgi" class="error"> Geçersiz telefon numarası</small>
         </div>
 
         <div class="form-group">
           <label for="şehir">Şehir</label>
-          <select class="form-control" id="şehirSelect" name="şehir" >
+          <select class="form-control" id="şehirSelect" name="şehir" v-modal="vşehir">
             <option>İstanbul</option>
             <option>Ankara</option>
             <option>Eskişehir</option>
@@ -103,13 +105,15 @@
         <label for="cinsiyet">Cinsiyet</label>
         <br>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="cinsiyet" id="kadın" value="Kadın" >
-          <label class="form-check-label" for="inlineRadio1">Kadın</label>
+          <input class="form-check-input" type="radio" name="cinsiyet" id="kadın" value="Kadın" v-modal="vcinsiyet">
+          <label class="form-check-label" for="kadın">Kadın</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek">
-          <label class="form-check-label" for="inlineRadio2">Erkek</label>
+          <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek" v-modal="vcinsiyet">
+          <label class="form-check-label" for="erkek">Erkek</label>
         </div>
+        <br>
+        <small class="error"> Lütfen cinsiyetinizi seçin</small>
         <br>
         <br>
         <div class="form-group">
@@ -120,14 +124,14 @@
         <br>
         <div class="form-group">
           <label for="mesaj">Mesaj</label>
-          <textarea class="form-control" id="mesaj" rows="3" name="mesaj"></textarea>
+          <textarea class="form-control" id="mesaj" rows="3" name="mesaj" aria-describedby="mesaj_bilgi"></textarea>
+          <small id="mesaj_bilgi" class="error"> Mesaj alanı boş bırakılamaz</small>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Check1" name="check" >
-          <label class="form-check-label" for="Check1">
-            Kişisel verilerimin kaydedilmesini onaylıyorum.
-          </label>
+          <input class="form-check-input" type="checkbox" value="" id="check" name="check" aria-describedby="check_bilgi">
+          <label class="form-check-label" for="Check1">Kişisel verilerimin kaydedilmesini onaylıyorum.</label><br>
+          <span class="error"> Bunu onaylayın</span>
         </div>
         <br>
         <div class="form-row">
@@ -135,7 +139,7 @@
             <button type="button" class="btn btn-outline-light btn-block" onclick="Kontrol1();">Kontrol ( JavaScript )</button>
           </div>
           <div class="form-group col-md-6">
-            <button type="button" class="btn btn-outline-light btn-block" >Kontrol ( AngularJS )</button>
+            <button type="button" class="btn btn-outline-light btn-block" onclick="return validForm()">Kontrol ( VueJS )</button>
           </div>
         </div>
         <br>
@@ -257,7 +261,7 @@
 
 
 
-
+  <script type="text/javascript" src="iletişim.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
